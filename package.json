@@ -1,0 +1,36 @@
+{
+  "name": "agent-memory-sqlite",
+  "version": "0.1.0",
+  "description": "Persistent, searchable memory for coding agents: SQLite FTS5 behind an MCP server, zero native deps",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Urthella/agent-memory-sqlite.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "memory",
+    "sqlite",
+    "fts5",
+    "claude-code"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
