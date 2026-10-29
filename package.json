@@ -23,8 +23,15 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "test": "node --test test/*.test.ts"
+    "test": "node --test test/*.test.ts",
+    "prepare": "tsc"
   },
+  "bin": {
+    "agent-memory-sqlite": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
     "zod": "^4.6.7"
